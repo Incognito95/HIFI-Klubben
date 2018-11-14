@@ -1,0 +1,1 @@
+SELECT * FROM hifi_klubben.user;

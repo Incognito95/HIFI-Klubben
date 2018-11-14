@@ -1,0 +1,15 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main">
+<section>
+    <h1><%= title %></h1>
+    <% results.forEach(result => { %>
+        <p><%= (typeof result.id != 'undefined') ? result.id : '' %></p>
+        <p><%= (typeof result.navn != 'undefined') ? result.navn : '' %></p>
+        <p><%= (typeof result.pris != 'undefined') ? result.pris : '' %></p>
+        <p><%= (typeof result.billede != 'undefined') ? result.billede : '' %></p>
+    <% }); %>>
+</section>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>
